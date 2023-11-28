@@ -1,0 +1,8 @@
+.DS_Store
+.venv_ssh
+text.json
+vcd_pysdk.log
+.__pycache__
+__pycache__
+__pycache__/functions.cpython-311.pyc
+logs/*

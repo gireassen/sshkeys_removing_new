@@ -1,0 +1,40 @@
+{
+    "pg_data":
+    {
+        "user":             "postgres",
+        "ip_addr":          "10.10.10.10",
+        "database":         "database",
+        "password_pg":      "password"
+    },
+    "ad_data":
+    {   
+        "server":           "10.10.10.10",
+        "server_d":         "dc.corp.local",
+        "ad_username":      "user",
+        "password_ad":      "password",
+        "DN":               "@corp.local",
+        "mmbrf":            "CN=wireguard,OU=Groups,DC=tko,DC=local",
+        "search_filter":    "(&(objectClass=user)(memberOf=CN=wireguard,OU=Groups,DC=tko,DC=local))"
+    },
+    "wg_data":
+    {
+        "host":             "10.10.10.10",
+        "username":         "user",
+        "password":         "password",
+        "port":             1234
+    },
+    "netbox":
+    {
+        "API_ENDPOINT": "https://10.10.10.10/api/virtualization/virtual-machines/",
+        "AWX_NEXT": "http://10.10.10.10:80",
+        "HEADERS":{
+            "Authorization": "Token 123qwe"
+        }
+    },
+    "ssh":
+    {
+        "username": "user",
+        "password": "password",
+        "path_lin": "/home/user/.ssh/authorized_keys"
+    }
+}
